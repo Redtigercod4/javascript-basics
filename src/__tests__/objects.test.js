@@ -12,7 +12,7 @@ const {
 } = require('../objects');
 
 describe('createPerson', () => {
-  xit('creates an object with the given name and age properties', () => {
+  it('creates an object with the given name and age properties', () => {
     expect(createPerson('Fred', 79)).toEqual({
       name: 'Fred',
       age: 79
@@ -26,7 +26,7 @@ describe('createPerson', () => {
 });
 
 describe('getName', () => {
-  xit('returns the name property of the object', () => {
+  it('returns the name property of the object', () => {
     expect(
       getName({
         name: 'Fred',
@@ -79,7 +79,7 @@ describe('hasProperty', () => {
 });
 
 describe('isOver65', () => {
-  xit('returns true if the person is aged over 65', () => {
+  it('returns true if the person is aged over 65', () => {
     const jim = {
       name: 'Jim',
       age: 66
