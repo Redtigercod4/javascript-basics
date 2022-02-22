@@ -14,27 +14,36 @@ const csvStringToArray = string => {
 };
 
 const addToArray = (element, array) => {
-  return array.push(element)
-};
+// your code here
+}
 
 const addToArray2 = (element, array) => {
-  // your code here
+// your code here
 };
 
 const removeNthElement = (index, array) => {
-  // your code here
-};
+  array.splice(index, 1)
+}; 
 
 const numbersToStrings = numbers => {
-  // your code here
+  let ele = numbers.join().split(',')
+  return ele;
 };
 
 const uppercaseWordsInArray = strings => {
-  // your code here
+ const upper = strings.map(elemetn => {
+   return elemetn.toUpperCase();
+ })
+ return upper;
 };
 
 const reverseWordsInArray = strings => {
-  // your code here
+  const revArray = []
+  const length = strings.length - 1;
+  for(let i = length; i >= 0; i--) {
+    revArray.push(strings[i]);
+  }
+  return revArray.join('');
 };
 
 const onlyEven = numbers => {

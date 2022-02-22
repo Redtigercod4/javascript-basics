@@ -98,8 +98,8 @@ function startsWith(char, string) {
 };
 
 function containsVowels(string) {
-  var vowelsArray = ["a","o","i","u","y"];
-  if (string.includes(vowelsArray)) {
+  let regExp = /[aeiou]/gi;
+  if (regExp.test(string)) {
     return true;
   } else {
     return false;
