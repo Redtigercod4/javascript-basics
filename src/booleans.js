@@ -31,6 +31,10 @@ function none(a, b) {
 };
 
 function one(a, b) {
+  if (a && b) {
+    return false;
+  }
+  return a || b;
 };
 
 function truthiness(a) {
@@ -99,11 +103,8 @@ function startsWith(char, string) {
 
 function containsVowels(string) {
   let regExp = /[aeiou]/gi;
-  if (regExp.test(string)) {
-    return true;
-  } else {
-    return false;
-  }
+  return regExp.test(string)
+
 };
 
 function isLowerCase(string) {

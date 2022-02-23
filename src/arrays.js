@@ -38,20 +38,27 @@ const uppercaseWordsInArray = strings => {
 };
 
 const reverseWordsInArray = strings => {
-  const revArray = []
-  const length = strings.length - 1;
-  for(let i = length; i >= 0; i--) {
-    revArray.push(strings[i]);
-  }
-  return revArray.join('');
+  // const revArray = []
+  // const length = strings.length - 1;
+  // for(let i = length; i >= 0; i--) {
+  //   revArray.push(strings[i]);
+  // }
+  // return revArray.join('');
 };
 
 const onlyEven = numbers => {
-  // your code here
+  const even = numbers.filter(function(x) {
+    if (x % 2 === 0 || x === 0) {
+      return x;
+    }
+  })
+ return even;
 };
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  const newArr = [...array]
+  newArr.splice(index, 1)
+  return newArr
 };
 
 const elementsStartingWithAVowel = strings => {
@@ -59,15 +66,23 @@ const elementsStartingWithAVowel = strings => {
 };
 
 const removeSpaces = string => {
-  // your code here
+  let newStr = string.replace(/\s+/g, '')
+  return newStr;
 };
 
 const sumNumbers = numbers => {
-  // your code here
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i]
+  }
+  return sum;
 };
 
 const sortByLastLetter = strings => {
-  // your code here
+  // let res = strings.sort((first, second) => {
+  //   first > second ? -1 : 1;
+  // })
+  // return res;
 };
 
 module.exports = {
